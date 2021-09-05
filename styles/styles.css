@@ -14,10 +14,13 @@
 body{
     width: 100%;
     height: 100%;
+    background-image: radial-gradient(red 5%, yellow 15%, green 60%);
+    
+
 }
 #container{
     width: 375px;
-    height: 700px;
+    height: 841px;
     display: grid;
     grid-template-rows: 40% 60%;
     position: fixed;
@@ -31,6 +34,7 @@ body{
 #screen-container{
     display: grid;
     grid-template-rows: 50% 50%; 
+    margin:25px;
 }
 #screen-operations{
     /*position: absolute;*/
@@ -50,11 +54,9 @@ body{
     color: #818181;
 }
 #screen-result{
-/*position: absolute;*/
 width: 100%;
 height: 100%;
-/*left: 171px;
-top: 180px;*/
+
 display: flex;
 align-items: center;
 justify-content: flex-end;
@@ -66,4 +68,127 @@ font-size: 48px;
 line-height: 72px;
 color: #FFFFFF;
 }
+
+#e-btn{
+    grid-area: e;
+}
+#u-btn{
+    grid-area: u;
+}
+#sin-btn{
+    grid-area: sin;
+}
+#deg-btn{
+    grid-area: deg;
+}
+#ac-btn{
+    grid-area: ac;
+}
+#del-btn{
+    grid-area: del;
+}
+#div-btn{
+    grid-area: div;
+}
+#mult-btn{
+    grid-area: mult;
+}
+#deg{
+    grid-area: deg;
+}
+#btn7{
+    grid-area: seven;
+}
+#btn8{
+    grid-area: eight;
+}
+#btn9{
+    grid-area: nine;
+}
+#btn4{
+    grid-area: four;
+}
+#btn5{
+    grid-area: five;
+}
+#btn6{
+    grid-area: six;
+}
+#btn1{
+    grid-area: one;
+}
+#btn2{
+    grid-area: two;
+}
+#btn3{
+    grid-area: three;
+}
+#btn-point{
+    grid-area: point;
+}
+#btn-minus{
+    grid-area: minus;
+}
+#btn-plus{
+    grid-area: plus;
+}
+#btn-equal{
+    grid-area: equal;
+}
+#btn0{
+    grid-area: zeroo;
+}
+
+#buttons-container{
+    display: grid;
+    grid-template-areas: 
+    'e u sin deg'
+    'ac del div mult'
+    'seven eight nine minus'
+    'four five six plus'
+    'one two three equal'
+    'zeroo zeroo point equal'
+    ;
+    gap:15px;
+    margin:30px;
+    grid-template-rows: 8% 14% 14% 14% 14% 14%;
+    grid-template-columns:22% 22% 22% 22%;
+    
+}
+
+input{
+    font-family: "Poppins-regular";
+    font-size:20px;
+    border-radius:16px;
+    cursor:pointer;
+    border:0px;
+}
+
+#e-btn, #u-btn, #sin-btn,#deg-btn,#btn0,#btn1,#btn2,#btn3,#btn4,#btn5,#btn6,#btn7,#btn8,#btn9,#btn-point{
+    background-color:#303136;
+    color:#29A8FF;
+    
+}
+#e-btn, #u-btn, #sin-btn,#deg-btn{
+    font-size:15px;
+}
+#btn0,#btn1,#btn2,#btn3,#btn4,#btn5,#btn6,#btn7,#btn8,#btn9{
+    font-size:30px;
+}
+
+#ac-btn,#del-btn{
+    background-color:#616161;
+    color:#A5A5A5;
+}
+#div-btn,#mult-btn,#btn-minus,#btn-plus{
+    background-color:#005DB2 ;
+    color:#339DFF;
+}
+#btn-equal{
+    background-color:#1991FF;
+    color:#B2DAFF;
+}
+
+
+
 
