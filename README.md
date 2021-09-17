@@ -1,3 +1,2 @@
 # Calculator
-
-![Test Image 1](calculator.png)
+<img src="calculator.PNG" height=700>
