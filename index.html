@@ -7,42 +7,42 @@
   <link rel="" type="" sizes="" href="">
   <link rel="stylesheet" type="text/css" href="./styles/styles.css" />
   <title> Calculator | Figma </title>
-
+  <script src="script.js" defer></script>
 </head>
 
 <body>
     <div id="container">
         <div id="screen-container">
             <div id="screen-operations">
-                    5+4-3
+                    
             </div>
             <div id="screen-result">
-                    =6
+                    0
             </div>
         </div>
         <div id="buttons-container">
-            <input id="e-btn" type="button" value="e"/>
-            <input id="u-btn" type="button" value="u"/>
-            <input id="sin-btn" type="button" value="sin"/>
-            <input id="deg-btn" type="button" value="deg"/>
-            <input id="ac-btn" type="button" value="Ac"/>
-            <input id="del-btn" type="button" value="Del"/>
-            <input id="div-btn" type="button" value="/"/>
-            <input id="mult-btn" type="button" value="*"/>
-            <input id="btn7" type="button" value="7"/>
-            <input id="btn8" type="button" value="8"/>
-            <input id="btn9" type="button" value="9"/>
-            <input id="btn4" type="button" value="4"/>
-            <input id="btn5" type="button" value="5"/>
-            <input id="btn6" type="button" value="6"/>
-            <input id="btn1" type="button" value="1"/>
-            <input id="btn2" type="button" value="2"/>
-            <input id="btn3" type="button" value="3"/>
-            <input id="btn0" type="button" value="0"/>
-            <input id="btn-point" type="button" value="."/>
-            <input id="btn-minus" type="button" value="-"/>
-            <input id="btn-plus" type="button" value="+"/>
-            <input id="btn-equal" type="button" value="="/>
+            <input id="e-btn" type="button" value="e" onclick="buttonPressed('e')"/>
+            <input id="u-btn" type="button" value="u" onclick="buttonPressed('u')"/>
+            <input id="sin-btn" type="button" value="sin" onclick="buttonPressed('sin')"/>
+            <input id="deg-btn" type="button" value="deg" onclick="buttonPressed('deg')"/>
+            <input id="ac-btn" type="button" value="Ac" onclick="buttonPressed('ac')"/>
+            <input id="del-btn" type="button" value="Del" onclick="buttonPressed('del')"/>
+            <input id="div-btn" type="button" value="/" onclick="buttonPressed('/')"/>
+            <input id="mult-btn" type="button" value="*" onclick="buttonPressed('*')"/>
+            <input id="btn7" type="button" value="7" onclick="buttonPressed(7)"/>
+            <input id="btn8" type="button" value="8" onclick="buttonPressed(8)"/>
+            <input id="btn9" type="button" value="9" onclick="buttonPressed(9)"/>
+            <input id="btn4" type="button" value="4" onclick="buttonPressed(4)"/>
+            <input id="btn5" type="button" value="5" onclick="buttonPressed(5)"/>
+            <input id="btn6" type="button" value="6" onclick="buttonPressed(6)"/>
+            <input id="btn1" type="button" value="1" onclick="buttonPressed(1)"/>
+            <input id="btn2" type="button" value="2" onclick="buttonPressed(2)"/>
+            <input id="btn3" type="button" value="3" onclick="buttonPressed(3)"/>
+            <input id="btn0" type="button" value="0" onclick="buttonPressed(0)"/>
+            <input id="btn-point" type="button" value="." onclick="buttonPressed('.')"/>
+            <input id="btn-minus" type="button" value="-" onclick="buttonPressed('-')"/>
+            <input id="btn-plus" type="button" value="+" onclick="buttonPressed('+')"/>
+            <input id="btn-equal" type="button" value="=" onclick="buttonPressed('=')"/>
 
         </div>
     </div>
