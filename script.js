@@ -16,7 +16,12 @@ function buttonPressed(value){
         history2=history2.slice(0,-1);
     }else if(value=="="){
         result = eval(history2);
-        result = result.toFixed(4);
+        if(result%1!=0){
+            result = result.toFixed(4);
+        }else{
+            result = parseInt(result);
+        }
+        
         let screenResult = document.getElementById("screen-result");
         screenResult.innerHTML="="+result;
         
